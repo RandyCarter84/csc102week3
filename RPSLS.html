@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- compatability metadata up there-->
+
+  <title>Rock Paper Scissors Lizard Spock</title>
+  <!-- link to css-->
+  <link rel="stylesheet" href="RPSLS.css">
+</head>
+
+<body>
+  
+  <h1>Rock  Paper  Scissors  Lizard  Spock</h1>
+  
+  <!--had to dump my grid into a container to align it on the page-->
+  <div class="grid-container">
+  <button id="rockButton">Rock</button>
+  <button id="paperButton">Paper</button>
+  <button id="scissorsButton">Scissors</button>
+  <button id="lizardButton">Lizard</button>
+  <button id="spockButton">Spock</button>
+  <button id="startButton">Start</button>
+</div>
+
+<!--separate container for the timer to give it that old DOS monochrome nostalgia in keeping with the geek theme-->
+  <div id="countdownTimer" class="timer"></div>
+  <h2>Score:</h2>
+  <h3 id="playerScore">You: <span id="playerScoreSpan">0</span></h3>
+  <h4 id="computerScore">Computer: <span id="computerScoreSpan">0</span></h4>
+<!-- found out the hard way why best practice is to add script to the bottom of the body so order of execution loads function after elements-->
+  <script type="text/javascript" src="RPSLS.js"></script>
+</body>
+</html>
+
